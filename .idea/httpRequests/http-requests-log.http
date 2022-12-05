@@ -1,0 +1,279 @@
+GET http://localhost:8080/api/blog/all
+
+<> 2022-12-05T171752.200.json
+
+###
+
+DELETE http://localhost:8080/api/blog?id=4
+
+###
+
+PUT http://localhost:8080/api/blog
+Content-Type: application/json
+
+{
+  "id": 5,
+  "title": "Blog",
+  "body": "good"
+}
+
+<> 2022-12-05T171610.200.json
+
+###
+
+GET http://localhost:8080/api/blog/accounts?id=2
+
+<> 2022-12-05T171342.200.json
+
+###
+
+GET http://localhost:8080/api/blog/accounts?id=1
+
+<> 2022-12-05T171337.200.json
+
+###
+
+GET http://localhost:8080/api/blog/all
+
+<> 2022-12-05T171300.200.json
+
+###
+
+POST http://localhost:8080/api/blog
+Content-Type: application/json
+
+{
+  "title": "Blog",
+  "body": "Hows your day?",
+  "authorID": 2
+}
+
+<> 2022-12-05T171246.200.json
+
+###
+
+POST http://localhost:8080/api/blog
+Content-Type: application/json
+
+{
+  "title": "Blog",
+  "body": "Hows your day?",
+  "authorID": 2
+}
+
+###
+
+POST http://localhost:8080/api/blog
+Content-Type: application/json
+
+{
+  "title": "Blog",
+  "body": "Hello World",
+  "authorID": 1
+}
+
+<> 2022-12-05T161126.200.json
+
+###
+
+POST http://localhost:8080/api/blog
+Content-Type: application/json
+
+{
+  "title": "Blog",
+  "body": "Hello World",
+  "author": 1
+}
+
+<> 2022-12-05T161014.500.json
+
+###
+
+DELETE http://localhost:8080/api/account?id=3
+
+###
+
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "title": "Blog",
+  "body": "Hello World",
+  "author": 1
+}
+
+<> 2022-12-05T160948.200.json
+
+###
+
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "password",
+  "firstname": "user"
+}
+
+<> 2022-12-05T160932.200.json
+
+###
+
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "Kabord",
+  "password": "password",
+  "firstname": "Kabor"
+}
+
+<> 2022-12-05T160920.200.json
+
+###
+
+GET http://localhost:8080/api/account/all
+
+<> 2022-12-05T143319.200.json
+
+###
+
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "Kabord",
+  "password": "password",
+  "firstname": "Kabor"
+}
+
+<> 2022-12-05T143317.200.json
+
+###
+
+GET http://localhost:8080/api/account/all
+
+<> 2022-12-05T143310.200.json
+
+###
+
+DELETE http://localhost:8080/api/account?id=1
+
+###
+
+GET http://localhost:8080/api/account/all
+
+<> 2022-12-05T142306.200.json
+
+###
+
+PUT http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "Kabord",
+  "password": "password",
+  "firstname": "user"
+}
+
+<> 2022-12-05T142256.200.json
+
+###
+
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "Kabord",
+  "password": "password",
+  "firstname": "Kabor"
+}
+
+<> 2022-12-05T142244.200.json
+
+###
+
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "password",
+  "firstname": "user"
+}
+
+<> 2022-12-05T142230.200.json
+
+###
+
+GET http://localhost:8080/api/account/all
+
+<> 2022-12-05T135509.200.json
+
+###
+
+GET http://localhost:8080/api/account?id=1
+
+<> 2022-12-05T135416.200.json
+
+###
+
+GET http://localhost:8080/api/account?id=2
+
+<> 2022-12-05T135411.200.json
+
+###
+
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "password",
+  "firstname": "user"
+}
+
+<> 2022-12-05T135336.200.json
+
+###
+
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "kabord",
+  "password": "password",
+  "firstname": "Kabor"
+}
+
+<> 2022-12-05T114722.200.json
+
+###
+
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "kabord",
+  "passowrd": "password",
+  "firstname": "Kabor"
+}
+
+<> 2022-12-05T114334.200.json
+
+###
+
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "kabord",
+  "passowrd": "password",
+  "firstname": "Kabor"
+}
+
+<> 2022-12-05T113729.200.json
+
+###
+

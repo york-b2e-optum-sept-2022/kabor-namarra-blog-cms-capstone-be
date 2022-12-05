@@ -18,19 +18,18 @@ public class Account {
 
     private String lastname;
 
-    @OneToMany(cascade = {CascadeType.ALL}, orphanRemoval = true)
-    private Set<Blog> blogs;
+//    @OneToMany(cascade = {CascadeType.ALL}, orphanRemoval = true)
+//    private Set<Blog> blogs;
 
 
     public Account() {
     }
 
-    public Account(String username, String password, String firstname, String lastname, Set<Blog> blogs) {
+    public Account(String username, String password, String firstname, String lastname) {
         this.username = username;
         this.password = password;
         this.firstname = firstname;
         this.lastname = lastname;
-        this.blogs = blogs;
     }
 
     public Long getId() {
@@ -69,11 +68,11 @@ public class Account {
         this.lastname = lastname;
     }
 
-    public Set<Blog> getBlogs() {
-        return blogs;
-    }
-
-    public void setBlogs(Set<Blog> blogs) {
-        this.blogs = blogs;
-    }
+//    public Set<Blog> getBlogs() {
+//        return blogs;
+//    }
+//
+//    public void setBlogs(Set<Blog> blogs) {
+//        this.blogs = blogs;
+//    }
 }

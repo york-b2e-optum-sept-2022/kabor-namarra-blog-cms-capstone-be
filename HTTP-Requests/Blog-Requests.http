@@ -1,0 +1,24 @@
+POST http://localhost:8080/api/blog
+Content-Type: application/json
+
+{
+  "title": "Blog",
+  "body": "Hows your day?",
+  "authorID": 2
+}
+
+###
+GET http://localhost:8080/api/blog/all
+
+###
+PUT http://localhost:8080/api/blog
+Content-Type: application/json
+
+{
+  "id": 5,
+  "title": "Blog",
+  "body": "good"
+}
+
+###
+DELETE http://localhost:8080/api/blog?id=4

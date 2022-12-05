@@ -2,9 +2,9 @@ POST http://localhost:8080/api/account
 Content-Type: application/json
 
 {
-  "username": "Kabord",
+  "username": "user",
   "password": "password",
-  "firstname": "Kabor"
+  "firstname": "user"
 }
 
 ###
@@ -27,4 +27,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:8080/api/account?id=1
+DELETE http://localhost:8080/api/account?id=3
