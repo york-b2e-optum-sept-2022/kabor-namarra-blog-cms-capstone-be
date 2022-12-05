@@ -1,0 +1,30 @@
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "Kabord",
+  "password": "password",
+  "firstname": "Kabor"
+}
+
+###
+
+GET http://localhost:8080/api/account?id=1
+
+###
+
+GET http://localhost:8080/api/account/all
+
+###
+PUT http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "Kabord",
+  "password": "password",
+  "firstname": "user"
+}
+
+###
+DELETE http://localhost:8080/api/account?id=1
