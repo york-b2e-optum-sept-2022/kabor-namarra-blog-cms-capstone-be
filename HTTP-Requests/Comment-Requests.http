@@ -1,0 +1,23 @@
+POST http://localhost:8080/api/comment
+Content-Type: application/json
+
+{
+  "body": "Welcome",
+  "authorID": 1,
+  "blogID": 4
+}
+
+###
+GET http://localhost:8080/api/comment?id=6
+
+###
+PUT http://localhost:8080/api/comment
+Content-Type: application/json
+
+{
+  "id": 7,
+  "body": "yes"
+}
+
+###
+DELETE http://localhost:8080/api/comment?id=6

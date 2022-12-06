@@ -5,46 +5,40 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.Set;
 
 @Entity
 @JsonIdentityInfo(
         generator = ObjectIdGenerators.PropertyGenerator.class,
         property = "id"
 )
-public class Blog {
+public class Comment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    private String title;
-
-    private String body;
-
     private Date createdDate;
 
     private Date updatedDate;
 
+    private String body;
+
     @ManyToOne
     private Account author;
 
-    @ElementCollection
-    private Set<Long> viewerID;
+    @ManyToOne
+    @JoinColumn(name = "blog_id", referencedColumnName = "id")
+    private Blog blog;
 
-    @OneToMany(mappedBy = "blog",cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Comment> comments;
-
-    public Blog() {
+    public Comment() {
     }
 
-    public Blog(String title, String body, Date createdDate, Account author) {
-        this.title = title;
-        this.body = body;
+    public Comment(Date createdDate, String body, Account author, Blog blog) {
         this.createdDate = createdDate;
+        this.body = body;
         this.author = author;
+        this.blog = blog;
     }
-
 
     public Long getId() {
         return id;
@@ -58,12 +52,12 @@ public class Blog {
         this.createdDate = createdDate;
     }
 
-    public String getTitle() {
-        return title;
+    public Date getUpdatedDate() {
+        return updatedDate;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setUpdatedDate(Date updatedDate) {
+        this.updatedDate = updatedDate;
     }
 
     public String getBody() {
@@ -74,14 +68,6 @@ public class Blog {
         this.body = body;
     }
 
-    public Date getUpdatedDate() {
-        return updatedDate;
-    }
-
-    public void setUpdatedDate(Date updatedDate) {
-        this.updatedDate = updatedDate;
-    }
-
     public Account getAuthor() {
         return author;
     }
@@ -90,19 +76,11 @@ public class Blog {
         this.author = author;
     }
 
-    public Set<Long> getViewerID() {
-        return viewerID;
+    public Blog getBlog() {
+        return blog;
     }
 
-    public void setViewerID(Set<Long> viewerID) {
-        this.viewerID = viewerID;
-    }
-
-    public Set<Comment> getComments() {
-        return comments;
-    }
-
-    public void setComments(Set<Comment> comments) {
-        this.comments = comments;
+    public void setBlog(Blog blog) {
+        this.blog = blog;
     }
 }

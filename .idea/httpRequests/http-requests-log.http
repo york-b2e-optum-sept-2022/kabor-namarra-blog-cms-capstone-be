@@ -1,3 +1,267 @@
+DELETE http://localhost:8080/api/blog?id=4
+
+###
+
+PUT http://localhost:8080/api/blog
+Content-Type: application/json
+
+{
+  "id": 9,
+  "title": "Hello",
+  "body": "Hello Worlds"
+}
+
+<> 2022-12-05T213336.200.json
+
+###
+
+POST http://localhost:8080/api/blog
+Content-Type: application/json
+
+{
+  "title": "Hello",
+  "body": "Hello World",
+  "authorID": 1
+}
+
+<> 2022-12-05T213219.200.json
+
+###
+
+POST http://localhost:8080/api/comment
+Content-Type: application/json
+
+{
+  "body": "Welcome",
+  "authorID": 1,
+  "blogID": 4
+}
+
+<> 2022-12-05T213139.200.json
+
+###
+
+DELETE http://localhost:8080/api/comment?id=6
+
+###
+
+PUT http://localhost:8080/api/comment
+Content-Type: application/json
+
+{
+  "id": 7,
+  "body": "yes"
+}
+
+<> 2022-12-05T213054.200.json
+
+###
+
+PUT http://localhost:8080/api/comment
+Content-Type: application/json
+
+{
+  "id": 6,
+  "body": "No"
+}
+
+<> 2022-12-05T212953.200.json
+
+###
+
+POST http://localhost:8080/api/comment
+Content-Type: application/json
+
+{
+  "body": "Hello",
+  "authorID": 1,
+  "blogID": 4
+}
+
+<> 2022-12-05T212901.200.json
+
+###
+
+PUT http://localhost:8080/api/comment
+Content-Type: application/json
+
+{
+  "id": 6,
+  "body": "Yes"
+}
+
+<> 2022-12-05T212821.200.json
+
+###
+
+GET http://localhost:8080/api/comment?id=6
+
+<> 2022-12-05T212701.200.json
+
+###
+
+POST http://localhost:8080/api/comment
+Content-Type: application/json
+
+{
+  "body": "Hello",
+  "authorID": 5,
+  "blogID": 4
+}
+
+<> 2022-12-05T212618.200.json
+
+###
+
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "Kabor",
+  "password": "password",
+  "firstname": "user"
+}
+
+<> 2022-12-05T212545.200.json
+
+###
+
+POST http://localhost:8080/api/blog
+Content-Type: application/json
+
+{
+  "title": "Blog",
+  "body": "Hows your day?",
+  "authorID": 1
+}
+
+<> 2022-12-05T212414.200.json
+
+###
+
+GET http://localhost:8080/api/blog/all
+
+<> 2022-12-05T211604.200.json
+
+###
+
+DELETE http://localhost:8080/api/blog?id=2
+
+###
+
+PUT http://localhost:8080/api/blog
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "Blog",
+  "body": "good"
+}
+
+<> 2022-12-05T210257.200.json
+
+###
+
+POST http://localhost:8080/api/comment
+Content-Type: application/json
+
+{
+  "body": "Hello",
+  "authorID": 1,
+  "blogID": 2
+}
+
+<> 2022-12-05T205939.200.json
+
+###
+
+POST http://localhost:8080/api/blog
+Content-Type: application/json
+
+{
+  "title": "Blog",
+  "body": "Hows your day?",
+  "authorID": 1
+}
+
+<> 2022-12-05T205927.200.json
+
+###
+
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "password",
+  "firstname": "user"
+}
+
+<> 2022-12-05T205920.200.json
+
+###
+
+POST http://localhost:8080/api/comment
+Content-Type: application/json
+
+{
+  "body": "Hello",
+  "authorID": 1,
+  "blogID": 2
+}
+
+<> 2022-12-05T205200.200.json
+
+###
+
+POST http://localhost:8080/api/comment
+Content-Type: application/json
+
+{
+  "body": "Hello",
+  "authorID": 1,
+  "blogID": 2
+}
+
+###
+
+POST http://localhost:8080/api/comment
+Content-Type: application/json
+
+{
+  "body": "Hello",
+  "authorID": 1,
+  "blogID": 2
+}
+
+###
+
+POST http://localhost:8080/api/blog
+Content-Type: application/json
+
+{
+  "title": "Blog",
+  "body": "Hows your day?",
+  "authorID": 1
+}
+
+<> 2022-12-05T200937.200.json
+
+###
+
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "password",
+  "firstname": "user"
+}
+
+<> 2022-12-05T200925.200.json
+
+###
+
 GET http://localhost:8080/api/blog/all
 
 <> 2022-12-05T171752.200.json
@@ -235,45 +499,6 @@ Content-Type: application/json
 }
 
 <> 2022-12-05T135336.200.json
-
-###
-
-POST http://localhost:8080/api/account
-Content-Type: application/json
-
-{
-  "username": "kabord",
-  "password": "password",
-  "firstname": "Kabor"
-}
-
-<> 2022-12-05T114722.200.json
-
-###
-
-POST http://localhost:8080/api/account
-Content-Type: application/json
-
-{
-  "username": "kabord",
-  "passowrd": "password",
-  "firstname": "Kabor"
-}
-
-<> 2022-12-05T114334.200.json
-
-###
-
-POST http://localhost:8080/api/account
-Content-Type: application/json
-
-{
-  "username": "kabord",
-  "passowrd": "password",
-  "firstname": "Kabor"
-}
-
-<> 2022-12-05T113729.200.json
 
 ###
 
