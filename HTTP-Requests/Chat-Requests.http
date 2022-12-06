@@ -1,0 +1,24 @@
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "messengerID": 15,
+  "receiverID": 5,
+  "messageText": "Is this Kabor?"
+}
+
+###
+GET http://localhost:8080/api/chat/accounts?id=5
+
+###
+GET http://localhost:8080/api/chat?id=16
+
+###
+PUT http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "chatID": 16,
+  "messageText": "Yes!",
+  "messengerID": 5
+}

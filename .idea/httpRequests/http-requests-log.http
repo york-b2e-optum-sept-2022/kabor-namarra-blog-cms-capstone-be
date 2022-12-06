@@ -1,3 +1,124 @@
+GET http://localhost:8080/api/chat?id=16
+
+<> 2022-12-06T100201.200.json
+
+###
+
+GET http://localhost:8080/api/chat/accounts?id=5
+
+<> 2022-12-06T100139.200.json
+
+###
+
+GET http://localhost:8080/api/chat?id=11
+
+<> 2022-12-06T100131.200.json
+
+###
+
+PUT http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "chatID": 16,
+  "messageText": "Yes!",
+  "messengerID": 5
+}
+
+<> 2022-12-06T100123.200.json
+
+###
+
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "messengerID": 15,
+  "receiverID": 5,
+  "messageText": "Is this Kabor?"
+}
+
+<> 2022-12-06T100032.200.json
+
+###
+
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "New",
+  "password": "password",
+  "firstname": "New"
+}
+
+<> 2022-12-06T095951.200.json
+
+###
+
+GET http://localhost:8080/api/chat/accounts?id=5
+
+<> 2022-12-06T095827.200.json
+
+###
+
+PUT http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "chatID": 11,
+  "messageText": "Hows it going!",
+  "messengerID": 5
+}
+
+<> 2022-12-06T095809.200.json
+
+###
+
+PUT http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "chatID": 11,
+  "messageText": "Hi!",
+  "messengerID": 1
+}
+
+<> 2022-12-06T095739.200.json
+
+###
+
+GET http://localhost:8080/api/chat/accounts?id=5
+
+<> 2022-12-06T095440.200.json
+
+###
+
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "messengerID": 1,
+  "receiverID": 5,
+  "messageText": "Hello"
+}
+
+<> 2022-12-06T093908.200.json
+
+###
+
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "messengerID": 1,
+  "receiverID": 5,
+  "messageText": "Hello"
+}
+
+<> 2022-12-06T093749.500.json
+
+###
+
 DELETE http://localhost:8080/api/blog?id=4
 
 ###
@@ -393,112 +514,6 @@ Content-Type: application/json
 }
 
 <> 2022-12-05T160920.200.json
-
-###
-
-GET http://localhost:8080/api/account/all
-
-<> 2022-12-05T143319.200.json
-
-###
-
-POST http://localhost:8080/api/account
-Content-Type: application/json
-
-{
-  "username": "Kabord",
-  "password": "password",
-  "firstname": "Kabor"
-}
-
-<> 2022-12-05T143317.200.json
-
-###
-
-GET http://localhost:8080/api/account/all
-
-<> 2022-12-05T143310.200.json
-
-###
-
-DELETE http://localhost:8080/api/account?id=1
-
-###
-
-GET http://localhost:8080/api/account/all
-
-<> 2022-12-05T142306.200.json
-
-###
-
-PUT http://localhost:8080/api/account
-Content-Type: application/json
-
-{
-  "id": 2,
-  "username": "Kabord",
-  "password": "password",
-  "firstname": "user"
-}
-
-<> 2022-12-05T142256.200.json
-
-###
-
-POST http://localhost:8080/api/account
-Content-Type: application/json
-
-{
-  "username": "Kabord",
-  "password": "password",
-  "firstname": "Kabor"
-}
-
-<> 2022-12-05T142244.200.json
-
-###
-
-POST http://localhost:8080/api/account
-Content-Type: application/json
-
-{
-  "username": "user",
-  "password": "password",
-  "firstname": "user"
-}
-
-<> 2022-12-05T142230.200.json
-
-###
-
-GET http://localhost:8080/api/account/all
-
-<> 2022-12-05T135509.200.json
-
-###
-
-GET http://localhost:8080/api/account?id=1
-
-<> 2022-12-05T135416.200.json
-
-###
-
-GET http://localhost:8080/api/account?id=2
-
-<> 2022-12-05T135411.200.json
-
-###
-
-POST http://localhost:8080/api/account
-Content-Type: application/json
-
-{
-  "username": "user",
-  "password": "password",
-  "firstname": "user"
-}
-
-<> 2022-12-05T135336.200.json
 
 ###
 
