@@ -20,8 +20,8 @@ public class AccountController {
     }
 
     @GetMapping
-    public Account getAccount(@RequestParam Long id){
-        return this.accountService.getAccount(id);
+    public Account getAccount(@RequestBody Account account){
+        return this.accountService.getAccount(account);
     }
 
     @GetMapping("/all")

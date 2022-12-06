@@ -1,3 +1,27 @@
+GET http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "Kabor",
+  "password": "password"
+}
+
+<> 2022-12-06T134330.200.json
+
+###
+
+GET http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "username": "New",
+  "password": "password"
+}
+
+<> 2022-12-06T134313.200.json
+
+###
+
 GET http://localhost:8080/api/chat?id=16
 
 <> 2022-12-06T100201.200.json
@@ -488,32 +512,6 @@ Content-Type: application/json
 }
 
 <> 2022-12-05T160948.200.json
-
-###
-
-POST http://localhost:8080/api/account
-Content-Type: application/json
-
-{
-  "username": "user",
-  "password": "password",
-  "firstname": "user"
-}
-
-<> 2022-12-05T160932.200.json
-
-###
-
-POST http://localhost:8080/api/account
-Content-Type: application/json
-
-{
-  "username": "Kabord",
-  "password": "password",
-  "firstname": "Kabor"
-}
-
-<> 2022-12-05T160920.200.json
 
 ###
 
