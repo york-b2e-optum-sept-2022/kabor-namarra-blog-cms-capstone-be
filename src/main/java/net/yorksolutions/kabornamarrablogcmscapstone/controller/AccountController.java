@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/account")
+@CrossOrigin
 public class AccountController {
 
     AccountService accountService;
@@ -20,8 +21,8 @@ public class AccountController {
     }
 
     @GetMapping
-    public Account getAccount(@RequestBody Account account){
-        return this.accountService.getAccount(account);
+    public Account getAccount(@RequestParam String username, @RequestParam String password){
+        return this.accountService.getAccount(username,password);
     }
 
     @GetMapping("/all")

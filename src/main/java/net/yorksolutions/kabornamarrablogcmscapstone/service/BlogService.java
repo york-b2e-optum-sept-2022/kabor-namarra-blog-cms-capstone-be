@@ -68,6 +68,7 @@ public class BlogService {
         Blog updatedBlog = blogOptional.get();
         updatedBlog.setTitle(blog.getTitle());
         updatedBlog.setBody(blog.getBody());
+        updatedBlog.setViewerID(blog.getViewerID());
         updatedBlog.setUpdatedDate(new Date());
 
         return this.blogRepository.save(updatedBlog);

@@ -21,8 +21,8 @@ public class AccountService {
         return this.accountRepository.save(account);
     }
 
-    public Account getAccount(Account account){
-        Optional<Account> accountOptional = this.accountRepository.findByUsernameAndPassword(account.getUsername(), account.getPassword());
+    public Account getAccount(String username, String password){
+        Optional<Account> accountOptional = this.accountRepository.findByUsernameAndPassword(username, password);
         if (accountOptional.isEmpty()) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
         }
