@@ -21,6 +21,7 @@ public class Comment {
 
     private Date updatedDate;
 
+    @Column(nullable = false)
     private String body;
 
     @ManyToOne

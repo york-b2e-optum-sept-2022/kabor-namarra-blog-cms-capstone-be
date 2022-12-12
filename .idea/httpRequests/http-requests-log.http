@@ -1,3 +1,9 @@
+GET http://localhost:8080/api/chat/accounts?id=5
+
+<> 2022-12-08T101501.200.json
+
+###
+
 GET http://localhost:8080/api/account
 Content-Type: application/json
 
@@ -499,19 +505,6 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:8080/api/account?id=3
-
-###
-
-POST http://localhost:8080/api/account
-Content-Type: application/json
-
-{
-  "title": "Blog",
-  "body": "Hello World",
-  "author": 1
-}
-
-<> 2022-12-05T160948.200.json
 
 ###
 
