@@ -1,5 +1,7 @@
 package net.yorksolutions.kabornamarrablogcmscapstone.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.List;
 import java.util.Set;
@@ -13,6 +15,7 @@ public class Account {
     @Column(unique = true)
     private String username;
 
+    @JsonIgnore
     private String password;
 
     private String firstname;

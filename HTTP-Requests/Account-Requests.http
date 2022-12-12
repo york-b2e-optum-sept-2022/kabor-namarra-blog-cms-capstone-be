@@ -13,7 +13,7 @@ GET http://localhost:8080/api/account
 Content-Type: application/json
 
 {
-  "username": "Kabor",
+  "username": "New",
   "password": "password"
 }
 
@@ -26,8 +26,8 @@ PUT http://localhost:8080/api/account
 Content-Type: application/json
 
 {
-  "id": 2,
-  "username": "Kabord",
+  "id": 1,
+  "username": "user",
   "password": "password",
   "firstname": "user"
 }
