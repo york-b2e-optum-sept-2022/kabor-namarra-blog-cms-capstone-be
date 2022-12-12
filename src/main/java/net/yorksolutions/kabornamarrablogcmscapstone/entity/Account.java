@@ -15,7 +15,6 @@ public class Account {
     @Column(unique = true)
     private String username;
 
-    @JsonIgnore
     private String password;
 
     private String firstname;
