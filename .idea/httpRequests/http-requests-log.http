@@ -1,3 +1,9 @@
+GET http://localhost:8080/api/blog/all
+
+<> 2022-12-16T112553.200.json
+
+###
+
 GET http://localhost:8080/api/chat/accounts?id=5
 
 <> 2022-12-08T101501.200.json
@@ -501,10 +507,6 @@ Content-Type: application/json
 }
 
 <> 2022-12-05T161014.500.json
-
-###
-
-DELETE http://localhost:8080/api/account?id=3
 
 ###
 

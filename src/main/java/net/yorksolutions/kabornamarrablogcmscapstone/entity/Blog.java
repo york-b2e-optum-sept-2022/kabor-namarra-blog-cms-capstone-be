@@ -21,7 +21,7 @@ public class Blog {
     @Column(nullable = false)
     private String title;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 10000)
     private String body;
 
     private Date createdDate;
